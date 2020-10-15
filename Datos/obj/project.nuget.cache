@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "sDw2wW4LfvCg9qhs+Amo7bm478R/5evn75K5FnCtKdkd/MPU0z4BuRd0+VxGz0YwITWZVhTDABoBS3Sd7QySWA==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\norma\\Desktop\\ParcialDotnet\\Datos\\Datos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\norma\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
