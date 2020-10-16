@@ -1,0 +1,43 @@
+<div class="row">​
+
+    <div class="col-6">​
+
+        <label>Total Ayudas: </label>​
+        <input value="{{numeroAyudas}}" disabled>
+    </div>
+    ​
+    <div class="col-6">​
+        <label>Valor Total Ayudas: </label>​
+        <input value="{{total}}" disabled>
+    </div>
+</div>​
+
+<hr>
+
+<table class="table table-striped" *ngIf='personas && personas.length'>​
+
+    <thead class="thead-dark">​
+
+        <tr>​
+            <th scope="col">#</th>​
+            <th>identificación</th>​
+            <th>Nombre </th>
+            <th>Apellido</th>​
+            <th>Edad</th>
+            ​<th>sexo</th>
+            <th>ValorApoyo</th>
+        </tr>​
+    </thead>
+    ​
+    <tbody>​
+        <tr *ngFor="let persona of personas; index as i ">​
+            <th scope="row">{{ i + 1 }}</th>​
+            <td>{{ persona.identificacion }}</td>​
+            <td>{{ persona.nombre }}</td>
+            <td>{{ persona.apellidos }}</td>​​
+            <td>{{ persona.edad }}</td>​
+            <td>{{ persona.sexo }}</td>
+            <td>{{ persona.valorApoyo }}</td>
+        </tr>​
+    </tbody>​
+</table>
