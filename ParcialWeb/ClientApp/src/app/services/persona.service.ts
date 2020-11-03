@@ -27,25 +27,23 @@ export class PersonaService {
     return this.http.get<persona[]>(this.baseUrl + 'api/Persona').pipe(
       tap(_ => this.handdleErrorService.log('Datos')),
       catchError(this.handdleErrorService.handleError<persona[]>('Consulta Persona', null))
-      );
+    );
   }
 
-  TotalAyudas(): Observable<number>
-  {
+  TotalAyudas(): Observable<number> {
     return this.http.get<number>(this.baseUrl + 'Api/PersonasTotalAyudas').pipe(
       tap(_ => this.handdleErrorService.log('Datos')),
       catchError(this.handdleErrorService.handleError<number>('Consulta Persona', null))
-      );
+    );
   }
-  
 
-  AyudasTotales(): Observable<number>
-  {
+
+  AyudasTotales(): Observable<number> {
     return this.http.get<number>(this.baseUrl + 'Api/PersonaAyudasTotales').pipe(
       tap(_ => this.handdleErrorService.log('Datos')),
       catchError(this.handdleErrorService.handleError<number>('Consulta Persona', null))
-      );
+    );
   }
 
-  
+
 }

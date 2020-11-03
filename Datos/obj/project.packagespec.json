@@ -31,6 +31,14 @@
   "frameworks": {
     "netstandard2.0": {
       "dependencies": {
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.1.9, )"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "[3.1.9, )"
+        },
         "NETStandard.Library": {
           "suppressParent": "All",
           "target": "Package",
@@ -40,10 +48,6 @@
         "System.Collections": {
           "target": "Package",
           "version": "[4.3.0, )"
-        },
-        "System.Data.SqlClient": {
-          "target": "Package",
-          "version": "[4.8.2, )"
         }
       },
       "imports": [

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "elJX8VyCu4U8lhFDq2aoGt8HcgVgPcc8W4VIeg4r3HbOyFTnxxKdPv3P7xUzV+HEbgE3Z3p4RUqKncbJSe4Qyg==",
+  "dgSpecHash": "ir+UfIKWsZo9kV1Oh+ikzjeAIhyAeJudkMG3NAH/9ckqEFEiC6wzxvOySN8M+kHXdPBSMsiGWuca2GN6SrROOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\Entity.csproj",
+  "projectFilePath": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\norma\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\norma\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\norma\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

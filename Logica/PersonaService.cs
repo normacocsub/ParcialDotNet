@@ -2,18 +2,18 @@
 using Entity;
 using Datos;
 using System.Collections.Generic;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Logica
 {
     public class PersonaService
     {
-        private readonly ConectionManager _connection;
-        private readonly PersonaRepository _repositorio;
+        private readonly EmergenciaContext _context;
 
-        public PersonaService(string connection)
+        public PersonaService(EmergenciaContext context)
         {
-            _connection = new ConectionManager(connection);
-            _repositorio = new PersonaRepository(_connection);
+            _context = context;
         }
 
         public GuardarPersonaResponse Guardar(Persona persona)
@@ -21,52 +21,48 @@ namespace Logica
             string mensaje = "";
             try
             {
-                _connection.Open();
-                if (_repositorio.BuscarPersona(persona.Identificacion) == null)
+                if (_context.Personas.Find(persona.Identificacion) == null)
                 {
-                    if ((_repositorio.TotalAyudas() + persona.ValorApoyo) > 60000000)
+                    decimal suma = _context.Personas.Include(p => p.Ayudas).ToList().Sum(p => p.Ayudas.ValorApoyo);
+                    if ((0 + persona.Ayudas.ValorApoyo) > 60000000)
                     {
                         mensaje = "Error: Ayudas superadas. ";
-                        _connection.Close();
                         return new GuardarPersonaResponse(mensaje, "NoMoney");
                     }
                     else
                     {
+                        Ayudas ayuda = persona.Ayudas;
+                        int numero = _context.Personas.Include(p => p.Ayudas).ToList().Count;
                         mensaje = "Se ha guardado la persona. ";
-                        _repositorio.GuardarPersona(persona);
-                        _connection.Close();
-                        return new GuardarPersonaResponse(mensaje,persona);
+                        ayuda.Numero = (numero + 1)+("");
+                        persona.AgregarAyuda(ayuda);
+                        _context.Personas.Add(persona);
+                        _context.SaveChanges();
+                        return new GuardarPersonaResponse(mensaje, persona);
                     }
                 }
                 else
                 {
                     mensaje = "Error: La persona ya se encuentra registrada. ";
-                    _connection.Close();
                     return new GuardarPersonaResponse(mensaje, "Duplicado");
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                _connection.Close();
                 return new GuardarPersonaResponse($"Error en la aplicacion: {e.Message}", "ErrorAplication");
             }
         }
 
         public decimal TotalAyudas()
         {
-            decimal total= 0;
-            _connection.Open();
-            total = _repositorio.TotalAyudas();
-            _connection.Close();
-            return total;
+            decimal suma = _context.Personas.Include(p => p.Ayudas).ToList().Sum(p => p.Ayudas.ValorApoyo);
+            return suma;
         }
 
         public int AyudasTotales()
         {
             int totalayudas = 0;
-            _connection.Open();
-            totalayudas = _repositorio.AyudaTotales();
-            _connection.Close();
+            totalayudas = _context.Personas.Include(p => p.Ayudas).ToList().Count;
             return totalayudas;
         }
 
@@ -75,14 +71,11 @@ namespace Logica
             List<Persona> personas = new List<Persona>();
             try
             {
-                _connection.Open();
-                personas = _repositorio.Consultar();
-                _connection.Close();
+                personas = _context.Personas.Include(p => p.Ayudas).ToList();
                 return new PersonaConsultaResponse(personas);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                _connection.Close();
                 return new PersonaConsultaResponse($"Error en la aplicacion: {e.Message}");
             }
         }

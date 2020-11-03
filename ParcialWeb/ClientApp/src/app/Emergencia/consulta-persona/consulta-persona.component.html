@@ -1,20 +1,20 @@
-<div class="row">​
-
-    <div class="col-6">​
-
-        <label>Total Ayudas: </label>​
-        <input value="{{numeroAyudas}}" disabled>
+<div class="row">
+    <div class="form-group">
+        <div class="col-6">
+            <input [(ngModel)]="searchText" type="text" class="formcontrol" placeholder="Type to filter">
+        </div>​
+        <label>Modalidad Apoyo</label>​
+        <select class="form-control" [(ngModel)]="searchText" >
+            <option selected>Seleccionar</option>
+            <option>alimentario</option>
+            <option>económico</option>
+        </select>
     </div>
-    ​
-    <div class="col-6">​
-        <label>Valor Total Ayudas: </label>​
-        <input value="{{total}}" disabled>
-    </div>
-</div>​
+</div>
 
 <hr>
 
-<table class="table table-striped" *ngIf='personas && personas.length'>​
+<table class="table table-striped" *ngIf='personas && personas.length '>​
 
     <thead class="thead-dark">​
 
@@ -30,14 +30,41 @@
     </thead>
     ​
     <tbody>​
-        <tr *ngFor="let persona of personas; index as i ">​
+        <tr *ngFor="let persona of personas |filtroPersona:searchText; index as i ">​
             <th scope="row">{{ i + 1 }}</th>​
             <td>{{ persona.identificacion }}</td>​
             <td>{{ persona.nombre }}</td>
             <td>{{ persona.apellidos }}</td>​​
             <td>{{ persona.edad }}</td>​
             <td>{{ persona.sexo }}</td>
-            <td>{{ persona.valorApoyo }}</td>
+            <td>{{ persona.ayudas.valorApoyo | currency: 'COP' }}</td>
         </tr>​
     </tbody>​
 </table>
+
+<div class="row space-rows">
+    <div class="col">
+        <div class="card cards-shadown cards-hover" data-aos="slide-right" data-aos-duration="950">
+            <div class="card-header"><span class="space"><a href="#"></a></span>
+                <div class="cardheader-text">
+                    <h4 id="heading-card">{{numeroAyudas}}</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <p class="card-text sub-text-color">Total Ayudas</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card cards-shadown cards-hover" data-aos="flip-up" data-aos-duration="950">
+            <div class="card-header cards-header-hover"><span class="space"><a href="#"></a></span>
+                <div class="cardheader-text">
+                    <h4 id="heading-card">{{total}}</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <p class="card-text sub-text-color">Valor Total Ayudas</p>
+            </div>
+        </div>
+    </div>
+</div>

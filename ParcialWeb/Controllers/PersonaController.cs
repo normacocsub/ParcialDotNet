@@ -5,6 +5,7 @@ using Entity;
 using ParcialWeb.Models;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
+using Datos;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -13,29 +14,25 @@ public class PersonaController : ControllerBase
 {
     private readonly PersonaService _personaService;
 
-    public IConfiguration Configuration { get; }
-
-    public PersonaController(IConfiguration configuration)
+    public PersonaController(EmergenciaContext context)
     {
-        Configuration = configuration;
-        string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
-        _personaService = new PersonaService(connectionString);
+        _personaService = new PersonaService(context);
     }
 
 
-        // GET: api/Persona​
-        [HttpGet]
-        public ActionResult<PersonaViewModel> Gets()
+    // GET: api/Persona​
+    [HttpGet]
+    public ActionResult<PersonaViewModel> Gets()
+    {
+        var response = _personaService.Consultar();
+        if (response.Error)
         {
-            var response = _personaService.Consultar();
-            if(response.Error)
-            {
-                return BadRequest(response.Mensaje);
-            }
-            return Ok(response.Personas.Select(p=> new PersonaViewModel(p)));
+            return BadRequest(response.Mensaje);
         }
+        return Ok(response.Personas.Select(p => new PersonaViewModel(p)));
+    }
 
-        
+
 
     //Post: Api/Persona
 
@@ -44,11 +41,11 @@ public class PersonaController : ControllerBase
     {
         Persona persona = MapearPersona(personaInput);
         var response = _personaService.Guardar(persona);
-        if(response.Error)
+        if (response.Error)
         {
-            ModelState.AddModelError("Error al guardar persona", response.Mensaje  );
+            ModelState.AddModelError("Error al guardar persona", response.Mensaje);
             var detallesproblemas = new ValidationProblemDetails(ModelState);
-            if(response.TipoRespuesta == "Duplicado" || response.TipoRespuesta == "NoMoney")
+            if (response.TipoRespuesta == "Duplicado" || response.TipoRespuesta == "NoMoney")
             {
                 detallesproblemas.Status = StatusCodes.Status400BadRequest;
             }
@@ -56,9 +53,10 @@ public class PersonaController : ControllerBase
             {
                 detallesproblemas.Status = StatusCodes.Status500InternalServerError;
             }
-            
+
             return BadRequest(detallesproblemas);
         }
+        
         return Ok(response.Persona);
     }
 
@@ -73,9 +71,7 @@ public class PersonaController : ControllerBase
             Edad = personaInput.Edad,
             Departamento = personaInput.Departamento,
             Ciudad = personaInput.Ciudad,
-            ValorApoyo = personaInput.ValorApoyo,
-            ModalidadApoyo = personaInput.ModalidadApoyo,
-            Fecha = personaInput.Fecha
+            Ayudas = personaInput.Ayudas
         };
         return persona;
     }

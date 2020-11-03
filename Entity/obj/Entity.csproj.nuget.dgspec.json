@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\Entity.csproj": {}
+    "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\Entity.csproj": {
+    "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\Entity.csproj",
+        "projectPath": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\norma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\obj\\",
+        "outputPath": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\norma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [

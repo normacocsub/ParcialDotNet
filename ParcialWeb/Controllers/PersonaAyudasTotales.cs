@@ -6,6 +6,7 @@ namespace Parcial1Web.Controllers
     using Entity;
     using ParcialWeb.Models;
     using System.Linq;
+    using Datos;
 
     [Route("api/[controller]")]
     [ApiController]
@@ -14,13 +15,11 @@ namespace Parcial1Web.Controllers
     {
         private readonly PersonaService _personaService;
 
-        public IConfiguration Configuration { get; }
 
-        public PersonaAyudasTotales(IConfiguration configuration)
+        public PersonaAyudasTotales(EmergenciaContext context)
         {
-            Configuration = configuration;
-            string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
-            _personaService = new PersonaService(connectionString);
+
+            _personaService = new PersonaService(context);
         }
 
         //GET: Api/PersonasAyudasTotales

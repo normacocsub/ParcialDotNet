@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac3586ff-f336-44c7-b5bb-31fff93f798c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Datos/bin/Debug/netstandard2.0/Datos.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Datos/bin/Debug/netstandard2.0/Datos.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datos/bin/Debug/netstandard2.0/Datos.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Datos/bin/Debug/netstandard2.0/Datos.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datos/obj/Datos.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Datos/obj/Datos.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datos/obj/Debug/netstandard2.0/Datos.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Datos/obj/Debug/netstandard2.0/Datos.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datos/obj/Debug/netstandard2.0/Datos.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Datos/obj/Debug/netstandard2.0/Datos.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datos/obj/Debug/netstandard2.0/Datos.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Datos/obj/Debug/netstandard2.0/Datos.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datos/obj/Debug/netstandard2.0/Datos.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Datos/obj/Debug/netstandard2.0/Datos.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datos/obj/Debug/netstandard2.0/Datos.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Datos/obj/Debug/netstandard2.0/Datos.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datos/obj/Debug/netstandard2.0/Datos.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Datos/obj/Debug/netstandard2.0/Datos.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datos/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Datos/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datos/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Datos/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/obj/Debug/netstandard2.0/Entity.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netstandard2.0/Entity.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/obj/Debug/netstandard2.0/Entity.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netstandard2.0/Entity.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/obj/Debug/netstandard2.0/Entity.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Debug/netstandard2.0/Entity.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/obj/Entity.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/Entity.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica/bin/Debug/netstandard2.0/Datos.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Logica/bin/Debug/netstandard2.0/Datos.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica/bin/Debug/netstandard2.0/Datos.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Logica/bin/Debug/netstandard2.0/Datos.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica/bin/Debug/netstandard2.0/Logica.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Logica/bin/Debug/netstandard2.0/Logica.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica/bin/Debug/netstandard2.0/Logica.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Logica/bin/Debug/netstandard2.0/Logica.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica/obj/Debug/netstandard2.0/Logica.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Logica/obj/Debug/netstandard2.0/Logica.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica/obj/Debug/netstandard2.0/Logica.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Logica/obj/Debug/netstandard2.0/Logica.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica/obj/Debug/netstandard2.0/Logica.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logica/obj/Debug/netstandard2.0/Logica.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica/obj/Debug/netstandard2.0/Logica.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Logica/obj/Debug/netstandard2.0/Logica.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica/obj/Debug/netstandard2.0/Logica.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Logica/obj/Debug/netstandard2.0/Logica.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica/obj/Debug/netstandard2.0/Logica.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Logica/obj/Debug/netstandard2.0/Logica.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica/obj/Logica.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Logica/obj/Logica.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Logica/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Logica/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParcialWeb/ClientApp/src/app/services/persona.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ParcialWeb/ClientApp/src/app/services/persona.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParcialWeb/Controllers/PersonasTotalAyudasController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ParcialWeb/Controllers/PersonasTotalAyudasController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParcialWeb/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ParcialWeb/Startup.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jFQSvvme0Htd5xO6gpNEcGoM8n" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/ParcialWeb/ClientApp/node_modules/protractor" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Protractor.E2E Tests (ParcialWeb-e2e)">
+    <configuration name="E2E Tests (ParcialWeb-e2e)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/ParcialWeb/ClientApp/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/ParcialWeb/ClientApp/node_modules/protractor" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/ParcialWeb/ClientApp/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac3586ff-f336-44c7-b5bb-31fff93f798c" name="Default Changelist" comment="" />
+      <created>1603397363476</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603397363476</updated>
+      <workItem from="1603397365991" duration="162000" />
+      <workItem from="1603397542193" duration="238000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603397672356">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1603397672356" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1603397606911">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603397606911" />
+  </component>
+</project>

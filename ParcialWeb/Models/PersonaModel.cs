@@ -12,9 +12,7 @@ namespace ParcialWeb.Models
         public int Edad { get; set; }
         public string Departamento { get; set; }
         public string Ciudad { get; set; }
-        public decimal ValorApoyo { get; set; }
-        public string  ModalidadApoyo { get; set; }
-        public DateTime Fecha { get; set; }
+        public Ayudas Ayudas { get; set; }
     }
 
     public class PersonaViewModel : PersonaInputModel
@@ -33,9 +31,7 @@ namespace ParcialWeb.Models
             Edad = persona.Edad;
             Departamento = persona.Departamento;
             Ciudad = persona.Ciudad;
-            ValorApoyo = persona.ValorApoyo;
-            ModalidadApoyo = persona.ModalidadApoyo;
-            Fecha = persona.Fecha;
+            Ayudas = persona.Ayudas;
         }
     }
 }

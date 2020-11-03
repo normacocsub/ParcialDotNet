@@ -1,11 +1,10 @@
-namespace Parcial1Web.Controllers
+namespace ParcialWeb.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
     using Logica;
     using Microsoft.Extensions.Configuration;
-    using Entity;
-    using ParcialWeb.Models;
-    using System.Linq;
+    using Datos;
+    
 
     [Route("api/[controller]")]
     [ApiController]
@@ -14,13 +13,11 @@ namespace Parcial1Web.Controllers
     {
         private readonly PersonaService _personaService;
 
-        public IConfiguration Configuration { get; }
 
-        public PersonasTotalAyudasController(IConfiguration configuration)
+        public PersonasTotalAyudasController(EmergenciaContext context)
         {
-            Configuration = configuration;
-            string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
-            _personaService = new PersonaService(connectionString);
+
+            _personaService = new PersonaService(context);
         }
 
         //GET: Api/PersonasTotalAyudas
@@ -29,6 +26,7 @@ namespace Parcial1Web.Controllers
         {
             var response = _personaService.TotalAyudas();
             return Ok(response);
+            
         }
     }
 }

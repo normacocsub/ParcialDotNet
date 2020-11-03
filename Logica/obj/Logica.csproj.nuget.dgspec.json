@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Logica\\Logica.csproj": {}
+    "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Logica\\Logica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Datos\\Datos.csproj": {
+    "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Datos\\Datos.csproj",
+        "projectUniqueName": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Datos\\Datos.csproj",
+        "projectPath": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Datos\\Datos.csproj",
         "packagesPath": "C:\\Users\\norma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Datos\\obj\\",
+        "outputPath": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\norma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\Entity.csproj"
+              "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\Entity.csproj"
               }
             }
           }
@@ -42,6 +42,14 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -51,10 +59,6 @@
             "System.Collections": {
               "target": "Package",
               "version": "[4.3.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.2, )"
             }
           },
           "imports": [
@@ -71,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\Entity.csproj": {
+    "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\Entity.csproj",
+        "projectPath": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\norma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\obj\\",
+        "outputPath": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\norma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -110,6 +114,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
@@ -126,14 +134,14 @@
         }
       }
     },
-    "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Logica\\Logica.csproj": {
+    "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Logica\\Logica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Logica\\Logica.csproj",
+        "projectUniqueName": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Logica\\Logica.csproj",
         "projectName": "Logica",
-        "projectPath": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Logica\\Logica.csproj",
+        "projectPath": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Logica\\Logica.csproj",
         "packagesPath": "C:\\Users\\norma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Logica\\obj\\",
+        "outputPath": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Logica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\norma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -149,11 +157,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Datos\\Datos.csproj": {
-                "projectPath": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Datos\\Datos.csproj"
+              "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Datos\\Datos.csproj": {
+                "projectPath": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Datos\\Datos.csproj"
               },
-              "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\norma\\Desktop\\ParcialDotnet\\Entity\\Entity.csproj"
+              "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\norma\\Desktop\\Programacion\\ParcialDotnet\\Entity\\Entity.csproj"
               }
             }
           }

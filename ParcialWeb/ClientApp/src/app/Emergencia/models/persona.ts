@@ -1,3 +1,5 @@
+import { Ayudas } from "./ayudas";
+
 export class persona {
     identificacion: string;
     nombre: string;
@@ -6,7 +8,5 @@ export class persona {
     edad: number;
     departamento: string;
     ciudad: string;
-    valorApoyo: number;
-    modalidadApoyo: string;
-    fecha: string;
+    ayudas: Ayudas;
 }

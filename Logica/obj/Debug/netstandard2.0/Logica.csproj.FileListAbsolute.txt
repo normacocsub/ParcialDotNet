@@ -12,3 +12,17 @@ C:\Users\norma\Desktop\ParcialDotnet\Logica\obj\Debug\netstandard2.0\Logica.cspr
 C:\Users\norma\Desktop\ParcialDotnet\Logica\obj\Debug\netstandard2.0\Logica.csproj.CopyComplete
 C:\Users\norma\Desktop\ParcialDotnet\Logica\obj\Debug\netstandard2.0\Logica.dll
 C:\Users\norma\Desktop\ParcialDotnet\Logica\obj\Debug\netstandard2.0\Logica.pdb
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\bin\Debug\netstandard2.0\Logica.deps.json
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\bin\Debug\netstandard2.0\Logica.dll
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\bin\Debug\netstandard2.0\Logica.pdb
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\bin\Debug\netstandard2.0\Datos.dll
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\bin\Debug\netstandard2.0\Datos.pdb
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\obj\Debug\netstandard2.0\Logica.csprojAssemblyReference.cache
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfoInputs.cache
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfo.cs
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\obj\Debug\netstandard2.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\obj\Debug\netstandard2.0\Logica.csproj.CopyComplete
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\obj\Debug\netstandard2.0\Logica.dll
+C:\Users\norma\Desktop\Programacion\ParcialDotnet\Logica\obj\Debug\netstandard2.0\Logica.pdb

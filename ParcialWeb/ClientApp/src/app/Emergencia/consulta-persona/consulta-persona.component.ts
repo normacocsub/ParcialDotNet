@@ -12,6 +12,8 @@ export class ConsultaPersonaComponent implements OnInit {
   personas: persona[];
   total: string;
   numeroAyudas: string;
+  searchText: string;
+  modalidadApoyo: string;
   
   constructor(private personaService: PersonaService) { }
 

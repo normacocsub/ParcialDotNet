@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { PersonaService } from './services/persona.service';
 import { RegistroPersonaComponent } from './Emergencia/registro-persona/registro-persona.component';
 import { ConsultaPersonaComponent } from './Emergencia/consulta-persona/consulta-persona.component';
+import { FiltroPersonaPipe } from './pipe/filtro-persona.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ConsultaPersonaComponent } from './Emergencia/consulta-persona/consulta
     FetchDataComponent,
     ModalComponent,
     RegistroPersonaComponent,
-    ConsultaPersonaComponent
+    ConsultaPersonaComponent,
+    FiltroPersonaPipe
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -37,6 +39,7 @@ import { ConsultaPersonaComponent } from './Emergencia/consulta-persona/consulta
     ]),
     AppRoutingModule
   ],
+  entryComponents: [ModalComponent],
   providers: [PersonaService],
   bootstrap: [AppComponent]
 })
